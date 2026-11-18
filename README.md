@@ -46,6 +46,7 @@ Companion analysis code: https://github.com/duwadisudan/wholehead-cocktail-party
 
 ## Contributed notes (version 1.0.1)
 
+- The paper doi:10.1016/j.neuroimage.2026.122292 is linked to this dataset by matching facts only (same authors and topic); its data statement says "Data are available on OpenNeuro." without an accession. The ReferencesAndLinks, HowToAcknowledge, EthicsApprovals and Funding values and the device keys added in version 1.0.1 come from that paper.
 - sub-24/nirs/sub-24_task-visualorient_run-01_nirs.snirf has no /nirs/probe group (no wavelengths, no optode positions; the file holds only /nirs/data1 and /nirs/metaDataTags) and cannot be loaded by MNE-Python.
 - sub-32 covert run-02: two event onsets (614.3 s, 632.9 s) fall after the end of the recording (RecordingDuration 597.635 s) and the event at 594.6 s (duration 5 s) runs past it.
 - sub-24 overt run-02 and sub-13 visualorient run-02 have no events.tsv.

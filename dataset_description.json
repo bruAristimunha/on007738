@@ -18,11 +18,22 @@
     "Kamal Sen"
   ],
   "DatasetDOI": "10.82901/nemar.on007738",
-  "License": "CC0",
+  "License": "CC0-1.0",
   "SourceDatasets": [
     {
       "DOI": "doi:10.18112/openneuro.ds007738.v1.0.0"
     }
   ],
-  "Version": "1.0.0"
+  "Version": "1.0.0",
+  "DatasetType": "raw",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1016/j.neuroimage.2026.122292"
+  ],
+  "HowToAcknowledge": "Please cite the associated paper (doi:10.1016/j.neuroimage.2026.122292).",
+  "EthicsApprovals": [
+    "The experiment was conducted in accordance with the Institutional Review Board of Boston University"
+  ],
+  "Funding": [
+    "National Science Foundation (NSF 2319321)"
+  ]
 }

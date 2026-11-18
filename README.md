@@ -43,3 +43,20 @@ included. Facial defacing is therefore not applicable to this dataset.
 Data were acquired and shared under approved IRB consent.
 
 Companion analysis code: https://github.com/duwadisudan/wholehead-cocktail-party-fnirs
+
+## Known issues
+
+Checked in the files of version 1.0.0; the source of each item is given with it.
+
+- `sub-24/nirs/sub-24_task-visualorient_run-01_nirs.snirf` has no `/nirs/probe` group (no wavelengths, no optode
+  positions; the file holds only `/nirs/data1` and `/nirs/metaDataTags`) and cannot be loaded by MNE-Python (source:
+  the published file, sha256 c2462b88...a45130f as in its git-annex key).
+- sub-32 covert run-02: 2 event onsets (614.3 s, 632.9 s) fall after the end of the recording (RecordingDuration
+  597.635 s in its `_nirs.json`) and the event at 594.6 s (duration 5 s) runs past it (source: that run's
+  events.tsv and nirs.json).
+- sub-24 overt run-02 and sub-13 visualorient run-02 have no events.tsv (source: the file listing of this dataset).
+- The events.tsv of the resting runs hold one row with trial_type n/a and duration 10 s (third column `amplitude` or
+  `value` = 1); its meaning is not stated (source: the resting events.tsv files).
+- The associated paper reports 43 recruited participants (26 in the main analysis, 8 returning for a control
+  experiment) (doi:10.1016/j.neuroimage.2026.122292; text checked in its CC-BY preprint
+  doi:10.1101/2026.05.06.722322, Methods, "Participants and Procedures"); this release holds 38 subject folders.

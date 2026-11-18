@@ -1,13 +1,10 @@
 1.0.1 2026-11-18
-  - dataset_description.json: License written as SPDX "CC0-1.0"; DatasetType "raw" (the BIDS default) written out
-  - dataset_description.json ReferencesAndLinks, HowToAcknowledge -> doi:10.1016/j.neuroimage.2026.122292 (same authors and title topic; its Data availability section: "Data are available on OpenNeuro.")
-  - dataset_description.json EthicsApprovals -> doi:10.1016/j.neuroimage.2026.122292, Methods "Participants and Procedures"
-  - dataset_description.json Funding -> doi:10.1016/j.neuroimage.2026.122292, section "Funding" ("NSF 2319321")
-  - *_nirs.json Manufacturer, ManufacturersModelName, CapManufacturersModelName -> doi:10.1016/j.neuroimage.2026.122292, Methods "fNIRS data acquisition" and "Optode layout" (in-house developed NINJANIRS22; custom 3D-printed cap); not in the SNIRF metaDataTags
-  - *_nirs.json NIRSDetectorOptodeCount 56 -> 144 = SNIRF /nirs/probe (README.md: "56 sources, 144 detectors")
-  - *_nirs.json RecordingType -> continuous-wave recordings with a regular SNIRF time vector
-  - channels.tsv, *_coordsystem.json, *_optodes.tsv added from the SNIRF measurement list and /nirs/probe
-  - README.md "Known issues" -> the named SNIRF, events.tsv and nirs.json files; doi:10.1016/j.neuroimage.2026.122292, Methods "Participants and Procedures"
-  - Texts of doi:10.1016/j.neuroimage.2026.122292 were checked in its CC-BY preprint doi:10.1101/2026.05.06.722322
+  - 222 sub-*/nirs/*_channels.tsv added from the SNIRF measurement list; 38 *_optodes.tsv and 38 *_coordsystem.json added from SNIRF /nirs/probe (NIRSCoordinateSystem Other, with a description)
+  - 121 *_nirs.json: NIRSDetectorOptodeCount 56 -> 144 (SNIRF /nirs/probe; README: 56 sources, 144 detectors)
+  - 222 *_nirs.json: Manufacturer, ManufacturersModelName (in-house NINJANIRS22) and CapManufacturersModelName (custom 3D-printed cap) added (doi:10.1016/j.neuroimage.2026.122292, Methods); RecordingType "continuous"
+  - dataset_description.json: DatasetType "raw", ReferencesAndLinks, HowToAcknowledge, EthicsApprovals and Funding added (doi:10.1016/j.neuroimage.2026.122292; texts checked in its CC-BY preprint doi:10.1101/2026.05.06.722322)
+  - sourcedata/: the published versions of the 121 JSON sidecars whose values change in this version, byte-identical at the same relative path
+  - README.md: new section "Contributed notes (version 1.0.1)"
+  - dataset_description.json: Version 1.0.0 -> 1.0.1
 1.0.0 2026-05-01
   - fresh new upload
